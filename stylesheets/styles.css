@@ -1,0 +1,130 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: "Lato", sans-serif;
+}
+
+
+.output{
+    background-color: #818181;
+    padding-top: 10px;
+    position:fixed;
+    bottom: 15px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+/*#imageDisplay{*/
+/*    position: relative;*/
+/*    max-height: 450px;*/
+/*    min-height: 450px;*/
+/*    margin: auto;*/
+/*    width: 55%;*/
+/*}*/
+
+#slideshow{
+    min-height:10px;
+    width: 50%;/*keep this equal to img width*/
+    margin: auto;
+    margin-top: 10px;
+}   
+.carrot{
+    margin: 5px;
+    margin-left: 20px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+span{
+    margin-left:10px;
+    display: inline-block;
+}
+
+.menuLink{
+    font-size:20px;
+    cursor:pointer;
+    position: fixed;
+    right: 1em;
+}
+
+.title{
+    text-align: center;
+}
+
+.blink {
+  font-size: 10px;
+  font-weight: bold;
+    -webkit-animation-name: blink;
+    -webkit-animation-duration: 1s;
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes blink {
+    0%   {color: white;}
+    49%  {color: white;}
+    51%  {color: #818181;}
+    100%  {color: #818181;}
+}
+
+/* Standard syntax */
+@keyframes blink {
+    0%   {color: white;}
+    49%  {color: white;}
+    51%  {color: #818181;}
+    100%  {color: #818181;}
+}
+
+
+/*all of this is side-nav stuff*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/*all of this is slideshow stuff*/
+
+#slideshow img{
+  position: absolute;
+  width: 50%;/*keep this equal to slideshow width*/
+  margin: auto;
+}
+
+
+header {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align:center;
+  height: 10em;
+  padding: 2em;
+}
